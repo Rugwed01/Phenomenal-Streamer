@@ -5,7 +5,6 @@ import App from './App.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// RESTORE StrictMode. It's an essential tool for finding bugs like this.
 root.render(
   <React.StrictMode>
     <App />
