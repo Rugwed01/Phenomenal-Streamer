@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # --- Database Configuration ---
-app.config["MONGO_URI"] = "mongodb+srv://rugwed:KIRTAN06@m0.ndkptvu.mongodb.net/streamer-db?retryWrites=true&w=majority&appName=M0"
+app.config["MONGO_URI"] = "."
 mongo.init_app(app)
 
 # --- Register API Blueprint ---
@@ -62,4 +62,5 @@ def main_page():
     return "Backend is running."
 
 if __name__ == '__main__':
+
     app.run(debug=True, host='0.0.0.0') # Use the standard app.run for flask run command
